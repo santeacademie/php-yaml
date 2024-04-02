@@ -46,7 +46,7 @@ class Parser extends SymfonyYamlParser
      * @param int $flags
      * @return array|null
      */
-    public function parse($value, $flags = 0)
+    public function parse(string $value, $flags = 0): mixed
     {
         $return = parent::parse($value, $flags);
 
